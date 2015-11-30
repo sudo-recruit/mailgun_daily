@@ -13,6 +13,10 @@ import {
 }
 from './rollbar';
 
+import {
+	MAILGUN_DASHBOARD_URL
+}
+from '../config';
 
 export default function(cb) {
 	getStats(function(err, data) {
@@ -28,8 +32,10 @@ export default function(cb) {
 			console.log('=====mailgun end====');
 
 			notify({
-				text: 'Current mailgun statistics',
-				fields: fields
+				text: 'Mailgun daily report',
+				fields: fields,
+				title: 'Current mailgun statistics',
+				title_link: MAILGUN_DASHBOARD_URL
 			});
 			cb(null, 'works normally :)');
 		} else {
