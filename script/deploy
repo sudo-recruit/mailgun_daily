@@ -1,0 +1,5 @@
+#!/bin/sh
+cd tmp
+aws lambda update-function-code --function-name mailgun_daily --zip-file fileb://mailgun_daily.zip
+cd ..
+

@@ -1,0 +1,21 @@
+{
+  "name": "mailgun_daily",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ocowchun <ocowchun@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.1.18"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.1.19",
+    "moment": "^2.10.6",
+    "request": "^2.67.0",
+    "rollbar": "^0.5.10",
+    "slack-notify": "^0.1.5"
+  }
+}
