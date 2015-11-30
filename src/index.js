@@ -36,8 +36,7 @@ export default function(cb) {
 				fields: fields,
 				title: 'Current mailgun statistics',
 				title_link: MAILGUN_DASHBOARD_URL
-			});
-			cb(null, 'works normally :)');
+			}, cb);
 		} else {
 			reportMessage(err);
 			cb(err, 'something wrong happen:(');
