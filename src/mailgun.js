@@ -8,7 +8,7 @@ let request = require('request');
 let url = 'https://api.mailgun.net/v3/mg.sudo.com.tw/stats/total';
 
 function rfc2822(m) {
-  return m.format('ddd, D MMM YYYY HH:mm:ss ') + 'GMT';
+  return m.format('ddd, DD MMM YYYY HH:mm:ss ') + 'GMT';
 }
 
 let options = {
